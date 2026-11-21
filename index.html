@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover carefully selected living room furniture, seating, shelves and home accessories.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Living Room Furniture | Home Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to products</a>
+    <header class="site-header">
+      <button class="brand-mark" type="button" aria-label="Open navigation">
+        <img src="assets/icons/Logo.png" alt="">
+      </button>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#main-content">Home</a>
+        <a href="#products">Shop</a>
+        <a href="#footer">Magazine</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-link" href="#products" aria-label="Shopping cart">
+          <img src="assets/icons/Cart%20Button.png" alt="">
+        </a>
+        <a class="login-link" href="#footer">Login</a>
+        <button class="mobile-menu" type="button" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page-content" id="main-content">
+      <h1 class="visually-hidden">Living room furniture</h1>
+      <section class="search-row" aria-label="Search and sort products">
+        <form class="search-form" role="search" action="#products">
+          <img src="assets/icons/Search.png" alt="">
+          <label class="visually-hidden" for="product-search">Search products</label>
+          <input id="product-search" name="q" type="search" value="living room">
+          <span class="powered-by">Powered by Algolia</span>
+          <img class="sajari-mark" src="assets/icons/Sajari%20Logo.png" alt="">
+        </form>
+        <label class="sort-control">
+          <span class="visually-hidden">Sort products</span>
+          <select name="sort">
+            <option>Best match</option>
+            <option>Price: low to high</option>
+            <option>Price: high to low</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="catalog-grid" id="products" aria-label="Living room products">
+        <aside class="filters">
+          <div class="filter-panel">
+            <input class="filter-toggle visually-hidden" type="checkbox" id="filter-toggle">
+            <label class="filter-heading" for="filter-toggle">
+              <span class="desktop-label">Filter by</span>
+              <span class="mobile-label">Filters</span>
+              <span class="chevron" aria-hidden="true"></span>
+            </label>
+            <div class="filter-options">
+              <details class="filter-group">
+                <summary>Collection<span class="chevron" aria-hidden="true"></span></summary>
+                <label><input type="checkbox" name="collection" value="new"> New arrivals</label>
+                <label><input type="checkbox" name="collection" value="bestsellers"> Best sellers</label>
+              </details>
+              <details class="filter-group">
+                <summary>Color<span class="chevron" aria-hidden="true"></span></summary>
+                <label><input type="checkbox" name="color" value="neutral"> Neutral</label>
+                <label><input type="checkbox" name="color" value="yellow"> Yellow</label>
+              </details>
+              <details class="filter-group">
+                <summary>Category<span class="chevron" aria-hidden="true"></span></summary>
+                <label><input type="checkbox" name="category" value="seating"> Seating</label>
+                <label><input type="checkbox" name="category" value="tables"> Tables</label>
+              </details>
+              <fieldset class="price-filter">
+                <legend>Price Range</legend>
+                <input type="range" min="0" max="10000" value="0" aria-label="Minimum price">
+                <div><span>$0</span><span>$10,000+</span></div>
+              </fieldset>
+            </div>
+          </div>
+        </aside>
+
+        <article class="product-card">
+          <a class="product-image" href="#footer">
+            <img src="assets/images/coombes.jpg" alt="Neutral sofa in a bright living room">
+          </a>
+          <div class="product-info"><h2><a href="#footer">Coombes</a></h2><p>$2,600</p></div>
+          <div class="product-extra">
+            <span class="category">Lounge</span>
+            <span class="rating" role="img" aria-label="4 out of 5 stars">
+              <img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star.png" alt="">
+            </span>
+            <button class="add-to-cart" type="button" aria-label="Add Coombes to cart"><img src="assets/icons/Cart%20Button.png" alt=""></button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-image" href="#footer">
+            <img src="assets/images/keeve-set.jpg" alt="Minimal white table and chairs beside indoor plants">
+          </a>
+          <div class="product-info"><h2><a href="#footer">Keeve Set</a></h2><p>$590</p></div>
+          <div class="product-extra">
+            <span class="category">Table &amp; Chairs</span>
+            <span class="rating" role="img" aria-label="4 out of 5 stars">
+              <img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star.png" alt="">
+            </span>
+            <button class="add-to-cart" type="button" aria-label="Add Keeve Set to cart"><img src="assets/icons/Cart%20Button.png" alt=""></button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-image" href="#footer">
+            <img src="assets/images/nille.jpg" alt="Pair of yellow armchairs in a garden">
+          </a>
+          <div class="product-info"><h2><a href="#footer">Nillé</a></h2><p>$950</p></div>
+          <div class="product-extra">
+            <span class="category">Armchair</span>
+            <span class="rating" role="img" aria-label="5 out of 5 stars">
+              <img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt="">
+            </span>
+            <button class="add-to-cart" type="button" aria-label="Add Nillé to cart"><img src="assets/icons/Cart%20Button.png" alt=""></button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-image" href="#footer">
+            <img src="assets/images/blanko.jpg" alt="White bedside table next to a bed">
+          </a>
+          <div class="product-info"><h2><a href="#footer">Blanko</a></h2><p>$90</p></div>
+          <div class="product-extra">
+            <span class="category">Side Table</span>
+            <span class="rating" role="img" aria-label="4 out of 5 stars">
+              <img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star.png" alt="">
+            </span>
+            <button class="add-to-cart" type="button" aria-label="Add Blanko to cart"><img src="assets/icons/Cart%20Button.png" alt=""></button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-image" href="#footer">
+            <img src="assets/images/momo.jpg" alt="Tall shelving filled with books">
+          </a>
+          <div class="product-info"><h2><a href="#footer">Momo</a></h2><p>$890</p></div>
+          <div class="product-extra">
+            <span class="category">Shelves</span>
+            <span class="rating" role="img" aria-label="4 out of 5 stars">
+              <img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star.png" alt="">
+            </span>
+            <button class="add-to-cart" type="button" aria-label="Add Momo to cart"><img src="assets/icons/Cart%20Button.png" alt=""></button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-image" href="#footer">
+            <img src="assets/images/penemille.jpg" alt="White molded chair on a light background">
+          </a>
+          <div class="product-info"><h2><a href="#footer">Penemillé</a></h2><p>$120</p></div>
+          <div class="product-extra">
+            <span class="category">Chair</span>
+            <span class="rating" role="img" aria-label="4 out of 5 stars">
+              <img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star.png" alt="">
+            </span>
+            <button class="add-to-cart" type="button" aria-label="Add Penemillé to cart"><img src="assets/icons/Cart%20Button.png" alt=""></button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-image" href="#footer">
+            <img src="assets/images/kappu.jpg" alt="Dark wooden display shelf with decorative objects">
+          </a>
+          <div class="product-info"><h2><a href="#footer">Kappu</a></h2><p>$420</p></div>
+          <div class="product-extra">
+            <span class="category">Shelves</span>
+            <span class="rating" role="img" aria-label="5 out of 5 stars">
+              <img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt=""><img src="assets/icons/Star%20-%20On.png" alt="">
+            </span>
+            <button class="add-to-cart" type="button" aria-label="Add Kappu to cart"><img src="assets/icons/Cart%20Button.png" alt=""></button>
+          </div>
+        </article>
+
+        <nav class="pagination" aria-label="Product pages">
+          <a class="current" href="#products" aria-current="page">1</a>
+          <a href="#products">2</a><a href="#products">3</a><a href="#products">4</a>
+          <a href="#products">5</a><a href="#products">6</a><a href="#products">7</a>
+          <a href="#products">8</a><a href="#products">9</a><a href="#products">10</a>
+          <a href="#products" aria-label="Next page">&gt;</a>
+        </nav>
+      </section>
+    </main>
+    <footer id="footer" class="visually-hidden">Home Shop furniture catalogue demonstration.</footer>
+  </body>
+</html>
